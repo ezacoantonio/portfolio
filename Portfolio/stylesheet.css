@@ -1,0 +1,241 @@
+Center the task list on the page
+#taskListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;;
+  }
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  
+  /* Style the task list */
+  #taskList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the task items */
+  #taskList li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  /* Style completed task items */
+  #taskList li.completed {
+    background-color: #c8e6c9;
+  }
+  
+  /* Style the task name */
+  .taskName {
+    font-weight: bold;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+  
+  /* Style the description */
+  .description {
+    font-size: 0.8em;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Style the due date */
+  .dueDate {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  /* Style the checkbox */
+  input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Hide the checkbox */
+  input[type="checkbox"] + * {
+    user-select: none;
+  }
+  
+  /* Style the checked checkbox */
+  input[type="checkbox"]:checked + .taskName {
+    text-decoration: line-through;
+    color: #4caf50;
+  }
+  
+  /* Style the add task button */
+  #addButton {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+  
+  /* Style the add task button on hover */
+  #addButton:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Style the input fields */
+  input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 1em;
+    padding: 5px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  /* Style the input fields on focus */
+  input[type="text"]:focus {
+    outline: none;
+    border-bottom-color: #4caf50;
+  }
+  
+  .taskName, .description, .dueDate, #addButton {
+    text-align: center;
+  }
+
+
+  #taskListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Style the task list */
+  #taskList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the task items */
+  .taskItem {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  /* Style completed task items */
+  .taskItem.completed {
+    background-color: #c8e6c9;
+  }
+  
+  /* Style the task name */
+  .taskItem .taskName {
+    font-weight: bold;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+  
+  /* Style the description */
+  .taskItem .description {
+    font-size: 0.8em;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Style the due date */
+  .taskItem .dueDate {
+    font-size: 0.8em;
+    color: #666;
+  }
+  
+  /* Style the checkbox */
+  .taskItem input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Hide the checkbox */
+  .taskItem input[type="checkbox"] + * {
+    user-select: none;
+  }
+  
+  /* Style the checked checkbox */
+  .taskItem input[type="checkbox"]:checked + .taskName {
+    text-decoration: line-through;
+    color: #4caf50;
+  }
+  
+  /* Style the add task button */
+  #addButton {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+  
+  /* Style the add task button on hover */
+  #addButton:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Style the input fields */
+  input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 1em;
+    padding: 5px;
+    margin-right: 10px;
+    width: 200px;
+  }
+  
+  /* Style the input fields on focus */
+  input[type="text"]:focus {
+    outline: none;
+    border-bottom-color: #4caf50;
+  }
+  
+  .taskName, .description, .dueDate, #addButton {
+    text-align: center;
+  }
+  
+  
